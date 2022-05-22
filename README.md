@@ -5,8 +5,8 @@
 ```
 git clone https://github.com/MatweyL/Germes.git
 ```
-- создать в PostgreSQL 14 от пользователя postgres базу данных **germes** с паролем *onlyone*  
-- проверить, что свободны порты 8080 и 5432
+- создать в **PostgreSQL 14** от пользователя *postgres* базу данных **germes** с паролем *onlyone*  
+- проверить, что свободны порты *8080* и *5432*
 - открыть папку **target** в комндной строке и ввести команду:
 ```
 java -jar germes-0.0.1-SNAPSHOT.jar

@@ -5,7 +5,15 @@
 ```
 git clone https://github.com/MatweyL/Germes.git
 ```
-- создать в **PostgreSQL 14** от пользователя *postgres* базу данных **germes** с паролем *onlyone*  
+- создать в **PostgreSQL 14** пользователя *germes*:
+```
+CREATE USER germes WITH PASSWORD 'onlyone';  
+```
+- создать в **PostgreSQL 14** базу данных **germes** от имени *germes* и дать пользователю *germes* нужные права доступа:
+```
+CREATE DATABASE germes OWNER germes;  
+GRANT ALL privileges ON DATABASE germes TO germes;
+``` 
 - проверить, что свободны порты *8080* и *5432*
 - открыть папку **target** в комндной строке и ввести команду:
 ```
